@@ -17,7 +17,14 @@ const Page = async ({ params }) => {
         <Header
           title={`Pencarian untuk ${keyword}...`}
         />
-        <AnimeList api={searchAnime} />
+        {response && searchAnime.data.length > 0 ? (
+          <AnimeList api={searchAnime} />
+        ) : (
+            <div>
+             <h1 className="text-3xl text-color-primary">Anime Tidak Ditemukan</h1>
+            </div>
+        )}
+        
       </section>
       {/* Anime Terbaru */}
     </>

@@ -3,7 +3,7 @@ import InputSearch from "./InputSearch";
 
 const Navbar = () => {
   return (
-    <header className="bg-indigo-400">
+    <header className="bg-color-accent">
       <nav className="flex md:flex-row flex-col justify-between gap-2 p-4 items-center">
         <Link
           href={"/"}

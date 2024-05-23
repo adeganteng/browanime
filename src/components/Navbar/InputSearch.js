@@ -9,9 +9,10 @@ const InputSearch = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    const keyword = searchRef.current.value;
-
-    router.push(`/search/${keyword}`);
+    const keyword = searchRef.current.value.trim();
+    if (keyword) {
+      router.push(`/search/${keyword}`);
+    }
   };
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
