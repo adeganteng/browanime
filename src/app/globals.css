@@ -20,3 +20,19 @@ img{
 img:hover{
     scale: 102%;
 }
+
+/* Menghilangkan tanda silang pada input tipe search di berbagai browser */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="search"]::-moz-search-cancel-button {
+  display: none;
+}
+
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}

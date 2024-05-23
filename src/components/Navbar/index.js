@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InputSearch from "./InputSearch";
 
 const Navbar = () => {
   return (
@@ -10,12 +11,7 @@ const Navbar = () => {
         >
           BrowAnimeList
         </Link>
-        <input
-          type="search"
-          name="search"
-          placeholder="Cari Anime"
-          className="py-2 px-4 rounded-full border-none text-sm "
-        />
+        <InputSearch />
       </nav>
     </header>
   );
