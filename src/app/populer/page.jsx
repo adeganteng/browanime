@@ -4,7 +4,8 @@ import HeaderMenu from "@/components/Utilities/HeaderMenu";
 import Pagination from "@/components/Utilities/Pagination";
 import { useEffect, useState } from "react";
 import Loading from "../loading";
-import { getAnimeResponse } from "../libs/api-libs";
+import { getAnimeResponse } from "@/libs/api-libs";
+
 
 const Populer = () => {
   const [page, setPage] = useState(1);
